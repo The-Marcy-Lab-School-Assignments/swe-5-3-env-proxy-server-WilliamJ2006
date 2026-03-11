@@ -29,6 +29,6 @@ The proxy server strategy is to have our backend store the API key and be the cl
 What is an environment variable, and why do we store API keys in a .env file instead of directly in source code? What role does .gitignore play in this setup, and what could go wrong if the .env file were accidentally committed to GitHub?
 
 **Your answer here**:
-An environment variable is a hidden variable that's stored on the host computer and is accessed through `process.env.variable_name`. We store them in `.env` files rather than in the source code to protect our hidden variables. `.gitignore` plays into this by telling github which files to ignore when committing and pushing. If the .env files were accidentily commited to GitHub, it would be public for any users to see meaning it's just as exposed as when leaving sensitive information in the frontend.
+An environment variable is a hidden variable that's stored on the host computer and is accessed through `process.env.variable_name`. We store them in `.env` files rather than in the source code to protect our hidden variables. `.gitignore` plays into this by telling GitHub which files to ignore when committing and pushing. If the .env files were accidentily commited to GitHub, it would be public for any users to see meaning it's just as exposed as when leaving sensitive information in the frontend.
 
 ---
